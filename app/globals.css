@@ -131,3 +131,48 @@
     @apply bg-background text-foreground font-sans;
   }
 }
+
+/* Sign In Layout */
+.sign-in {
+  @apply min-h-screen flex items-center justify-center px-6;
+}
+
+.sign-in__card {
+  @apply w-full max-w-sm bg-secondary;
+}
+
+.sign-in__title {
+  @apply text-2xl font-bold text-center;
+}
+
+.sign-in__subtitle {
+  @apply text-xl font-bold text-center mt-2;
+}
+
+.sign-in__description {
+  @apply text-center mt-2;
+}
+
+.sign-in__form {
+  @apply flex flex-col gap-6;
+}
+
+.sign-in__field {
+  @apply grid gap-2;
+}
+
+.sign-in__password-header {
+  @apply flex items-center;
+}
+
+.sign-in__forgot-password {
+  @apply ml-auto inline-block text-sm underline-offset-4 hover:underline text-primary;
+}
+
+.sign-in__footer {
+  @apply flex-col gap-2;
+}
+
+.sign-in__submit {
+  @apply w-full py-4 cursor-pointer;
+}
