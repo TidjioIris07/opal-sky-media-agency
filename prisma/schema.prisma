@@ -70,3 +70,16 @@ model Verification {
 
   @@index([identifier])
 }
+
+enum MediaType {
+  IMAGE
+  VIDEO
+}
+
+model Media {
+  id               String    @id @default(uuid())
+  fichierUrl       String
+  type             MediaType
+  nomOriginal      String
+  dateTelechargement DateTime @default(now())
+}
